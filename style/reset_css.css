@@ -1,0 +1,62 @@
+﻿/* - - - - - - - - - 各浏览器样式默认值标准化  - - - - - - - - -*/
+html,body,span,object,iframe,h1,h2,h3,h4,h5,p,blockquote,pre,
+a,address,code,
+del,em,img,dl,dt,dd,ol,ul,li,
+fieldset,form,label{
+margin:0;padding:0;border:0;
+font-style:inherit;font-family:inherit;vertical-align:baseline;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,audio,video{margin:0;padding:0;display: block;}
+html{-webkit-text-size-adjust:none;}
+img{border:none;vertical-align:middle;}
+input,select,button{padding:0;margin:0;outline:none;font-family:inherit;vertical-align:middle;}
+textarea{font-family:inherit;padding:0;margin:0;}
+button{cursor:pointer;}
+html{overflow-x:hidden;}
+body{font-size:12px;font-family:'Microsoft YaHei';background:#1c0f0c url(../images/footerbg.jpg) no-repeat center bottom 120px;}
+ul,ol{list-style-type:none;}
+h1{font-size:24px;}
+h2{font-size:18px;}
+h3,h4{font-size:14px;}
+h5{font-size:12px;}
+i,em,address{font-style:normal;}
+a{ text-decoration:none;color:#4f4f4f;}
+a:hover{transition:color 200ms linear 0s,background-color 200ms linear 0s,border-color 200ms linear 0s;color:#be030a;}
+a:active{}	/*点击与释放时*/
+a:visited{}/* 访问过 */
+/*  - - - - - - - - - 常用类样式  - - - - - - - - -*/
+.photo_fullsize img{display:block;width:100%;height:100%;}	/*图片全尺寸*/
+.no_bor{ border:none!important;}	/*无边框*/
+.no_bg{ background:none!important;}	/*无背景*/
+.clear{ display:block;height:0; line-height:0;overflow:hidden; clear:both;font-size:0;}/*清除浮动*/
+.clear_::after{content:"";display:block; clear:both;height:0; line-height:0; overflow:hidden;}/*清除浮动*/
+.center{margin:0 auto;width:1280px;}	/*让内容区块居中*/
+
+
+.container1{width:617px;height:auto;}
+.container1 .div_scroll{float:left;width:100%;height:289px;overflow:auto;}
+.container1 .scroll_container{position:relative;overflow:hidden;}
+.container1 .scroll_absolute{position:absolute;}
+.container1 .scroll_vertical_bar{width:8px;height:100%;position:absolute;top:0;right:0;margin:0;padding:0;}
+.container1 .scroll_track{position:relative;border-radius:10px;background:url(../images/line_y.gif) repeat-y center top;}
+.container1 .scroll_drag{position:relative;top:0;left:0;border-top:none;border-bottom:none;cursor:pointer;background-color:#950101;border-radius:20px;}
+.container1 .scroll_arrow{text-indent:-20000px;cursor:pointer;display:block;}
+.container1 .scroll_vertical_bar .scroll_arrow{height:16px;}
+	/*窗口*/
+	*html{background-image:url(about:blank);background-attachment:fixed;}/*解决IE6下滚动抖动的问题*/
+	#window{width:100%;height:100%; position:fixed;top:0;left:0;background: url(../images/heibg.png) repeat left top;display:none;z-index:100000; _position:absolute;_top:expression(eval(document.documentElement.scrollTop));}
+	#float_window{position:absolute;top:50%;left:50%;padding:0px;z-index:20001;}
+	#float_window .closewindow{width:52px;background:url(../images/btn_close.png) no-repeat left bottom;height:52px;position:absolute;}
+	#float_window .closewindow:hover{background-position:left top;}
+	#video{width:850;height:600px;background:#000;}
+
+
+#Floatingbar{width:178px;position:fixed;top:50%;margin-top:50px;right:0px;z-index:150000;_position:absolute;_top:expression(eval(document.documentElement.scrollTop+this.offsetHeight));}
+#Floatingbar ul li a{height:40px;line-height:40px;font-size:14px;color:#fff;padding-left:20px;background:url(../images/heibg.jpg) no-repeat left top;display:block;transition:padding-left 300ms linear 0s;}
+#Floatingbar ul li a:hover{background:#2e2e2e;text-decoration:none;transition:padding-left 300ms linear 0s;padding-left:26px;}
+#Floatingbar ul li.red a{background-image:url(../images/redbg.jpg) ;}
+#Floatingbar ul li.red a:hover{background:#7d1e1a;}
+#Floatingbar .erweima{width:152px;height:152px;padding:13px;background-color:#7e1613;}
+#Floatingbar .erweima img{width:100%;height:100%;display:block;}
+#Floatingbar .arrow{width:19px;height:182px;position:absolute;top:50%;left:-19px;margin-top:-90px;background:url(../images/btn_openclose.png) no-repeat left top;cursor:pointer;}
+#Floatingbar .arrow.btnclose{background-position:right top;}
+	
